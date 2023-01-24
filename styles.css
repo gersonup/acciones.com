@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #EFF2F3;
+}
+
+header {
+    /* Layout Properties */
+    top: 68px;
+    left: 0px;
+    width: 1920px;
+    height: 70px;
+
+
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 34px #AFAFAF24;
+    opacity: 1;
+}
+
+.header-logo {
+   /* Layout Properties */
+
+    width: 176px;
+    height: 23px;
+    margin-top: 23.36px;
+    margin-bottom: 23.36px;
+    margin-left: 25.5px;
+    
+    /* UI Properties */
+    background: transparent url('resources/datamaxlogo.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
