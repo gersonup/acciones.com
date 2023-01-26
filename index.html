@@ -4,28 +4,100 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Acciones</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/c89d5783e0.css" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
   <body>
-        <header>
-            <div class="header-logo"></div>
-        </header>
-        <!-- <aside>
-            <nav>
+    <header>
+        <div class="logo"></div>
+        <div class="input-group">
+          <div class="input-group-prepend">
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <input type="search" class="form-control">
+        </div>
+        <div class="user">
+          <a class="username" href="#">
+            Gerson Ricardo Navarro Hernández
+            <i class="fa-solid fa-user"></i> 
+          </a>
+          <div class="vl"></div>
+          <a class="settings-button" href="#">
+            <div class="user-settings">
+              <div class="gear-1">
+                <i class="fa-solid fa-gear fa-rotate-by"></i>
+              </div>
+              <div class="xs-gears">
+                  <i class="gear-2 fa-solid fa-gear fa-2xs fa-rotate-by"></i>
+                  <i class="gear-3 fa-solid fa-gear fa-2xs fa-rotate-by"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+    </header>
 
-            </nav>
-        </aside>
-        <section>
+    <div class="content-row">
 
-        </section>
-        <aside>
+      <div class="column left">
+        <div class="nav-1">
+          <a href="#">
+            <i class="fa-sharp fa-solid fa-house-chimney"></i>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-handshake-angle"></i>
+          </a>
+          <a href="#">
+            <i class="fa-sharp fa-solid fa-file-lines"></i>
+          </a>
+        </div>
+      </div>
 
-        </aside>
-        <footer>
+      <!-- Content -->
 
-        </footer> -->
+      <div class="column middle" id="main_container">
+        <div class="card-element">
+          <div class="card">
+            <div class="card-body">
+              <div id="created_by_name"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End content -->
+
+      <div class="column right">
+        <div class="menu">
+          <div class="menu-head">
+            <div class="user-settings-header">
+              <div class="gear-1">
+                <i class="fa-solid fa-gear fa-rotate-by"></i>
+              </div>
+              <div class="xs-gears">
+                <i class="gear-2 fa-solid fa-gear fa-2xs fa-rotate-by"></i>
+                <i class="gear-3 fa-solid fa-gear fa-2xs fa-rotate-by"></i>
+              </div>
+            </div>
+            <p>Control de acceso</p> 
+          </div>
+          <div class="menu-content">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-users"></i><span>Usuarios</span></a></li>
+              <li><a href="#"><i class="fa-solid fa-robot"></i><span>Roles</span></a></li>
+              <li><a href="#"><i class="fa-solid fa-star"></i><span>Acciones</span></a></li>
+              <li><a href="#"><i class="fa-solid fa-cubes"></i><span>Modulos/ Submodulos</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="functions.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c89d5783e0.js" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,19 +1,23 @@
+@import url(//db.onlinewebfonts.com/c/d5f93e1b825e0f1729dc143050cadf84?family=Semplicita+Pro);
+
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
-body {
-    background-color: #EFF2F3;
+body, html {
+    opacity: 1;
+    height: 100%;
+    width: 100%;
 }
 
 header {
     /* Layout Properties */
-    top: 68px;
-    left: 0px;
-    width: 1920px;
+    width:100%;
     height: 70px;
-
+    display: flex;
+    align-items: center;
 
     /* UI Properties */
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -21,16 +25,268 @@ header {
     opacity: 1;
 }
 
-.header-logo {
+header .logo {
    /* Layout Properties */
-
-    width: 176px;
-    height: 23px;
-    margin-top: 23.36px;
-    margin-bottom: 23.36px;
+    min-width: 176px;
+    min-height: 23;
+    height: 32.8%;
+    width: auto;
     margin-left: 25.5px;
-    
+    display: inline-flex;
+    position: static;
+
     /* UI Properties */
     background: transparent url('resources/datamaxlogo.svg') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
+
+/*---Header Search input----*/
+
+header .input-group {
+    width: 227px;
+    height: 29px;
+    margin-left: 38.8px;
+}
+
+.fa-magnifying-glass {
+
+    /* Layout Properties */
+    width: 13.13px;
+    height: 13.13px;
+    margin-left: 11.44px;
+    margin-right: 11.44px;
+    margin-top: 7.94px;
+    margin-bottom: 7.94px;
+
+    /* UI Properties */
+    color: #878787;
+    opacity: 1;
+}
+
+header input[type="search"] {
+    height: 29px;
+    width: auto;
+
+    background: #EFEFEF 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    border: none;
+    opacity: 1;
+}
+
+.input-group-prepend {
+    background: #EFEFEF 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+}
+
+
+/* ====HEADER USER====*/
+
+header .user {
+    display: flex;
+    align-items:center;
+    margin-left: auto; 
+}
+
+.username {
+    width: auto;
+    height: 22px;
+
+    /* UI Properties */
+    text-align: left;
+    font: regular normal normal 16px/22px Semplicita Pro;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.username .fa-user {
+    color: #4286D4;
+    margin-left: 19.36px;
+}
+
+.user-icon {
+    width: 17.16px;
+    height: 17.16px;
+    color: #4286D4;
+}
+
+.vl {
+    width: 0px;
+    height: 47px;
+    margin-left: 14.98px;
+    /* UI Properties */
+    border: 1px solid #E6E6E6;
+    opacity: 1;
+}
+
+/* ---User settings gears---*/
+.user-settings {
+    color: #023F87;
+    width: 22.99px;
+    height: 18.33px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    margin-left: 14.98px;
+    margin-right: 24.53px;
+}
+
+.gear-1 {
+    width: auto;
+    height: 18.33;
+}
+
+.xs-gears {
+    width: auto;
+    height: 18.33px;
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.gear-2 {
+    width: 1px;
+    height: 1px;
+    margin-bottom: 10px;
+    --fa-rotate-angle: 45deg;
+}
+
+.gear-3 {
+    width: 1px;
+    height: 1px;
+    margin-top: -5px;
+    --fa-rotate-angle: 45deg;
+}
+
+.settings-button {
+    text-decoration: none;
+}
+
+/* ==== CONTENT ==== */
+
+.content-row {
+    background-color: #EFF2F3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.column {
+    height: 100%;
+    border: 1px solid #E6E6E6;
+}
+
+.left {
+    min-width: 69px;
+ 
+    /* UI Properties */
+    background: #FCFCFC 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 12px #A7A7A729;
+    opacity: 1;
+}
+
+.right {
+    min-width: 249px;
+
+    /* UI Properties */
+    background: #023F87 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.middle {
+    width: 100%;
+}
+
+/*---Content Left Navigator icons----*/
+
+.nav-1 {
+    height: fit-content;
+    display: grid;
+    justify-items: center;
+}
+
+.nav-1 a {
+    text-decoration: none;
+    color: #4286D4;
+}
+
+.left .fa-house-chimney {
+    width: 18.76px;
+    height: 14.59px;
+    margin-top: 46.41px;
+}
+
+.left .fa-handshake-angle {
+    width: 18.76px;
+    height: 15px;
+    margin-top: 19.05px;
+   
+}
+.left .fa-file-lines {
+    width: 12.2px;
+    height: 16.26px;
+    margin-top: 16px;
+}
+
+/*--- MAIN CONTENT----*/
+
+.card {
+    height: 101px;
+}
+.middle .card .vl {
+    height: 40px;
+}
+
+/*--- END MAIN CONTENT----*/
+
+/*----Rigth Navigator content----*/
+
+.menu-head {
+    color: #B1C3DA;
+    display: flex;
+    margin-top: 59px;
+    margin-left: 28.01px;
+}
+
+.menu-head p {
+    margin-left: 16px;
+}
+
+.menu-content {
+    margin-top: 44px;
+    width: 100%;
+    display: block;
+    align-items: center;
+}
+
+.user-settings-header {
+    width: 22.99px;
+    height: 18.33px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin-left: 24px;
+}
+
+.menu a {
+
+    /* UI Properties */
+    text-decoration: none;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul span{
+    margin-left: 20.35px;
+}
+
